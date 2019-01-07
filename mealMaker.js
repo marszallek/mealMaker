@@ -72,7 +72,7 @@ let menu = {
   getRandomDishFromCourse: function (courseName) {
     const dishes = this._courses[courseName];
     const randomIndex = Math.floor(Math.random() * dishes.length);
-    return dishes[randomIndex]
+    return dishes[randomIndex];
   },
   getRandoMeal: function() {
     const appetizer = this.getRandomDishFromCourse('appetizers');
