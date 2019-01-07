@@ -44,7 +44,8 @@ let menu = {
     let meal5 = menu._courses.mains[2];
     let meal6 = menu._courses.desserts[0];
     let meal7 = menu._courses.desserts[1];
-    let luckyMeal = Math.floor(Math.random()*7);
+    let meal8 = menu._courses.desserts[2];
+    let luckyMeal = Math.floor(Math.random()*8);
     switch(luckyMeal){
     case 0:
     console.log(meal1);
@@ -66,7 +67,10 @@ let menu = {
     break; 
     case 6:
     console.log(meal7);
-    break;        
+    break;
+    case 7: 
+    console.log(meal8);
+    break;       
     };
   },// Codecademy way of random meal with parameter and it is random 3 dishes meal
   getRandomDishFromCourse: function (courseName) {
